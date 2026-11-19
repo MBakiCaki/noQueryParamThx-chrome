@@ -3,8 +3,7 @@
 A Chrome Manifest V3 extension that opens a link in a background tab with its entire query string removed. Hold **Ctrl** and press the **middle mouse button** on a supported link.
 
 Extension version: **0.2.1**. Documentation updated: **2026-11-19**.
-
-This update adds documentation and portable tests; runtime behavior is unchanged. The popup, notifications, and demo remain in Turkish. This README is the primary English guide. The updated [Turkish guide](docs/archive/KURULUM.tr-0.2.1.md) is archived as a snapshot.
+Implemented with GPT 6.1 Sol agent.
 
 ## Main Usage
 1.Removing query parameters targeting to relate your website visits
