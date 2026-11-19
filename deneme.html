@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temiz Bağlantı · Deneme</title>
+  <link rel="stylesheet" href="deneme.css">
+  <script src="cleaner.js" defer></script>
+  <script src="pinterest.js" defer></script>
+  <script src="content.js" defer></script>
+</head>
+<body>
+  <main>
+    <span class="label">CHROME EKLENTİSİ · 0.2.1</span>
+    <h1>Bağlantıyı sadeleştir.</h1>
+    <p class="intro">Aşağıdaki bağlantıya <kbd>Ctrl</kbd> basılıyken <strong>mouse orta tuşuyla</strong> tıkla. Temiz adres arka planda yeni sekmede açılır.</p>
+    <article>
+      <h2>1. Query parametreleri silinir</h2>
+      <a id="query" href="https://example.com/?utm_source=whatsapp&amp;ref=deneme">Örnek bağlantıyı aç <span>↗</span></a>
+      <p class="url">Önce: https://example.com/?utm_source=whatsapp&amp;ref=deneme<br>Sonra: https://example.com/</p>
+    </article>
+    <article>
+      <h2>2. Sayfa içi bölüm korunur</h2>
+      <a id="fragment" href="https://example.com/?utm_source=deneme#bolum">İçindeki yazıya da tıklayabilirsin <span>↗</span></a>
+      <p class="url">Önce: https://example.com/?utm_source=deneme#bolum<br>Sonra: https://example.com/#bolum</p>
+    </article>
+    <aside><strong>Bu sürüm bütün query parametrelerini siler.</strong> Video kimliği, arama sorgusu veya imzalı erişim parametresi de silinir. Bu bağlantılar çalışmayabilir.</aside>
+    <p class="footer">Normal orta tık orijinal bağlantıyı açar. Ctrl + sol tık değişmez. Bu sayfada ağ isteği yalnızca bir bağlantıyı açtığında yapılır.</p>
+  </main>
+</body>
+</html>

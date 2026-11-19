@@ -1,0 +1,13 @@
+# Local development and generated packages
+node_modules/
+work/
+outputs/
+*.zip
+*.crx
+*.pem
+*.log
+.env
+.env.*
+__pycache__/
+.DS_Store
+Thumbs.db

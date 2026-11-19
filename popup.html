@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <title>Temiz Bağlantı</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <div class="heading"><strong>Temiz Bağlantı</strong><span id="version"></span></div>
+  <p id="status" role="status">Sayfa durumu kontrol ediliyor…</p>
+  <p id="help">Ctrl basılıyken mouse orta tuşuna bas.</p>
+  <section id="last" hidden>
+    <h2>Son tıklama</h2>
+    <p id="result"></p>
+    <label>Bağlantının hedefi<code id="original"></code></label>
+    <label>Açılması istenen temiz adres<code id="clean"></code></label>
+    <p class="small">Yeni sekmedeki adres bundan farklıysa hedef site yönlendirme yapmış olabilir.</p>
+  </section>
+  <button id="demo" type="button">Deneme sayfasını aç</button>
+</body>
+</html>

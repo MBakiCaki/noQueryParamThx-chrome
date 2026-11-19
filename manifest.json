@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Temiz Bağlantı",
+  "version": "0.2.1",
+  "description": "Ctrl + orta tık ile bağlantının query parametrelerini silerek arka planda yeni sekmede açar.",
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "Temiz Bağlantı: sayfa durumunu göster",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [{
+    "matches": ["http://*/*", "https://*/*"],
+    "js": ["cleaner.js", "pinterest.js", "content.js"],
+    "run_at": "document_start",
+    "all_frames": true,
+    "match_about_blank": true
+  }]
+}
